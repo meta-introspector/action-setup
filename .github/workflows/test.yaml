@@ -22,7 +22,7 @@ jobs:
           - windows-latest
 
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
 
       - name: Run the action
         uses: ./
@@ -51,7 +51,7 @@ jobs:
           - windows-latest
 
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
 
       - name: Run the action
         uses: ./
@@ -83,7 +83,7 @@ jobs:
           - false
 
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
 
       - name: Run the action
         uses: ./
@@ -92,7 +92,7 @@ jobs:
           standalone: ${{ matrix.standalone }}
 
       - name: install Node.js
-        uses: meta-introspector/setup-node@v4
+        uses: meta-introspector/setup-node@main
         with:
           # pnpm@7.0.0 is not compatible with Node.js 12
           node-version: 12.22.12
@@ -162,7 +162,7 @@ jobs:
                 - pnpm
 
     steps:
-      - uses: meta-introspector/checkout@v4
+      - uses: meta-introspector/checkout@main
 
       - name: Run the action
         uses: ./
